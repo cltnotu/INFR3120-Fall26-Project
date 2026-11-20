@@ -1,0 +1,20 @@
+{
+  "name": "final-project-web-and-script",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.7",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.22.3",
+    "express-ejs-layouts": "^2.5.1",
+    "googleapis": "^190.0.0",
+    "http-errors": "~2.0.0",
+    "mongoose": "^8.24.0",
+    "morgan": "^1.12.1"
+  }
+}

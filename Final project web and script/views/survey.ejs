@@ -1,0 +1,35 @@
+<section class="page-section">
+    <div class="container">
+        <div class="survey-box">
+            <h1>Reserve a Table</h1>
+
+            <% if (error) { %>
+                <p class="error-message" role="alert"><%= error %></p>
+            <% } %>
+
+            <form action="/survey" method="POST">
+                <div class="mb-3">
+                    <label for="groupSize" class="form-label">How many people are in your group?</label>
+                    <input type="number" class="form-control" id="groupSize" name="groupSize"
+                           min="1" step="1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="guestName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="guestName" name="guestName" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="arrivalDate" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="arrivalDate" name="arrivalDate" required>
+                </div>
+                <div class="mb-3">
+                    <label for="arrivalTime" class="form-label">What time will you arrive?</label>
+                    <input type="time" class="form-control" id="arrivalTime" name="arrivalTime" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Reserve</button>
+                <a href="/" class="back-link">Back to Home</a>
+            </form>
+        </div>
+    </div>
+</section>

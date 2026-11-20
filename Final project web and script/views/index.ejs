@@ -1,0 +1,39 @@
+<section class="hero">
+    <div class="container">
+        <h1>Welcome to Ontario Tech Eatery</h1>
+        <p>Sandwiches and a simple way to reserve a table.</p>
+        <a href="/survey" class="btn btn-primary">Reserve a Table</a>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container">
+        <div class="reservations-box">
+            <h2>Reservations</h2>
+            <div class="table-responsive reservations-table">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th>Number of Guests</th>
+                            <th>Arrival Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (!databaseReady) { %>
+                            <tr><td colspan="2">Reservations are currently unavailable.</td></tr>
+                        <% } else if (reservations.length === 0) { %>
+                            <tr><td colspan="2">No reservations yet.</td></tr>
+                        <% } else { %>
+                            <% reservations.forEach(function(reservation) { %>
+                                <tr>
+                                    <td><%= reservation.groupSize %></td>
+                                    <td><%= reservation.arrivalTime %></td>
+                                </tr>
+                            <% }); %>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

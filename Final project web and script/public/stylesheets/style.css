@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #253044;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #174f90;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #174f90;
+}
+
+.navbar-brand, .navbar .nav-link {
+    color: white;
+}
+
+.logo-placeholder {
+    display: inline-block;
+    border: 1px dashed white;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.hero p {
+    margin: 15px auto 25px;
+}
+
+.page-section {
+    padding: 25px 0 50px;
+}
+
+.reservations-box, .survey-box {
+    background-color: white;
+    border: 1px solid #e0e5eb;
+    border-radius: 16px;
+    padding: 28px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.survey-box {
+    max-width: 600px;
+}
+
+.reservations-table {
+    border: 1px solid #e0e5eb;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 18px;
+}
+
+.table thead th {
+    background-color: #e7f1fa;
+}
+
+.table td, .table th {
+    padding: 13px;
+}
+
+.btn-primary {
+    background-color: #ee8423;
+    border-color: #ee8423;
+    color: #222;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #f59a44;
+    border-color: #f59a44;
+    color: #222;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.back-link {
+    margin-left: 15px;
+    color: #174f90;
+}
+
+.error-message {
+    color: #9c1f1f;
+    font-weight: bold;
+}
+
+.site-footer {
+    background-color: #174f90;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero { padding: 35px 15px; }
+    .reservations-box, .survey-box { padding: 18px; }
+    .back-link { display: inline-block; margin-top: 12px; }
+}
