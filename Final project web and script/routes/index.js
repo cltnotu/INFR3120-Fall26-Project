@@ -3,6 +3,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var Reservation = require('../models/reservation');
 var router = express.Router();
+const { isSlotFree, createBooking } = require('../services/calendar');
 
 router.get('/', async function(req, res, next) {
   try {
