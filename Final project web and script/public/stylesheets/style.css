@@ -18,13 +18,48 @@ h1, h2 {
     color: white;
 }
 
-.logo-placeholder {
-    display: inline-block;
-    border: 1px dashed white;
-    padding: 7px;
-    border-radius: 10px;
-    font-size: 12px;
-    margin-right: 10px;
+/* Custom UC Team Logo - Blue and Gold */
+.team-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;   
+    height: 55px;  
+    background: linear-gradient(135deg, #174f90, #0a2a54); 
+    border: 2px solid #f1c40f; 
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 26px; 
+    border-radius: 14px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); 
+    margin-right: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.team-logo .letter-u {
+    transform: translateX(4px);
+    z-index: 1;
+    color: #ffffff; 
+}
+
+.team-logo .letter-c {
+    transform: translateX(-4px);
+    color: #f1c40f; 
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.navbar-brand:hover .team-logo {
+    transform: scale(1.08) rotate(-3deg);
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.5); 
+}
+
+.navbar-brand span.ms-2 {
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .hero {
