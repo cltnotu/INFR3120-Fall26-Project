@@ -63,8 +63,8 @@ All external code has been reviewed, documented with comments, and accounts for 
 
 ## Team Contributions
 
-- **[Partner's Name]**: Express setup, MongoDB connection, initial survey template, homepage layout, and reservation model.
-- **[Your Name]**: Google Calendar API integration, calendar availability checks, survey date/name inputs, calendar event creation, README documentation, and cloud deployment.
+- **Urveesh Etwarowa**: Express setup, MongoDB connection, initial survey template, homepage layout, and reservation model.
+- **Clinton Obazee**: Google Calendar API integration, calendar availability checks, survey date/name inputs, calendar event creation, README documentation, and cloud deployment.
 
 ## Deployment
 
