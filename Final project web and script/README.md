@@ -72,3 +72,6 @@ This app is deployed on Render. To deploy your own version:
 1. Create a Web Service on Render and connect your GitHub repository.
 2. Set the Build Command to `npm install` and the Start Command to `npm start`.
 3. Add `MONGODB_URI`, `GOOGLE_SERVICE_ACCOUNT_EMAIL`, `GOOGLE_PRIVATE_KEY`, and `GOOGLE_CALENDAR_ID` as Environment Variables in the Render dashboard.
+
+## Quick note
+The application is hosted on Render's free tier. If the site takes up to 60 seconds to load on the first visit, please wait—the server is just waking up from sleep mode.
